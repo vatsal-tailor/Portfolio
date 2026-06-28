@@ -35,7 +35,7 @@ const formRef = useRef<HTMLFormElement>(null);
         </p>
       )}
 
-      {state.errors?.length > 0 && (
+      {state.errors?.length > 0 && Object.keys(state.errors).length > 0 && (
         <p className="text-red-600 font-semibold mb-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
           ❌ Something went wrong. Please try again.
         </p>
